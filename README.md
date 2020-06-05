@@ -1,7 +1,8 @@
-# hjgonzalez06.github.io
+# Hiram J. González - Systems Engineer & Web Developer
 
 ## Welcome to my portfolio and personal website
 
-  Tech Stack: -HTML.
-              -CSS (Bootstrap).
-              -JS.
+####  Tech Stack:
+     -HTML
+     -CSS (Bootstrap)
+     -JS
