@@ -3,6 +3,6 @@
 ## Welcome to my portfolio and personal website
 
 ####  Tech Stack:
-     -HTML.
+     -HTML5.
      -CSS3 & Bootstrap.
      -JavaScript.
