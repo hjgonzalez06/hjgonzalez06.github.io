@@ -19,6 +19,7 @@
     --spanish-viridian: #008060;
     --blue-saphire: #006080;
     --alice-blue: #F1F8FB;
+    --jet-gray: #303030;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
@@ -141,7 +142,7 @@ header{
 }
 
 .list-item{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: auto 15px;
 }
@@ -157,6 +158,64 @@ header{
     background-color: var(--spanish-viridian);
     border-radius: 5px;
     color: var(--alice-blue);
+}
+
+
+
+footer{
+    font-family: "Open Sans";
+    background-color: var(--jet-gray);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-block{
+    display: block;
+    color: var(--alice-blue);
+    font-size: 1.5rem;
+}
+
+.footer-block .fa-heart{
+    color: var(--spanish-viridian);
+    font-size: 14px;
+}
+
+#social::before{
+    background-color: var(--spanish-viridian);
+    position: relative;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 30px;
+    margin: 10px auto 20px;
+}
+
+#social{
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+#social ul{
+    margin: 0;
+    list-style: none outside;
+}
+
+#social ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 7px 5px 0;
+}
+
+#social ul li a{
+    text-align: center;
+    border-radius: 5px;
+    color: var(--spanish-viridian);
+    font-size: 2rem;
+    border: 1px var(--alice-blue) solid;
+    height: 32px;
+    line-height: 32px;
+    width: 32px;
+    display: inline-block;
 }
 
 /* Código Responsive Extra Small */
