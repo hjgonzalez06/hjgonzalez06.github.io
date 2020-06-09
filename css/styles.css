@@ -160,7 +160,28 @@ header{
     color: var(--alice-blue);
 }
 
+/* REEVALUAR EL FONDO DE #WELCOME */
 
+#welcome{
+    overflow: hidden;
+    height: calc(100vh - 85px) !important;
+    position: relative;
+    display: flex;
+    padding: 0;
+}
+
+#welcome video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.welcome-background{
+    position: absolute;
+    top: 0;
+    transform: translateX(0%) translateY(0%);
+    width: 100%;
+    z-index: -1;
+}
 
 footer{
     font-family: "Open Sans";
