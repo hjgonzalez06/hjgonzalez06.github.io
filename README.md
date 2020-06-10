@@ -6,3 +6,7 @@
      -HTML5.
      -CSS3 & Bootstrap.
      -JavaScript.
+
+
+                                            © Copyright 2020 | Hiram J. González.
+                                        All rights reserved. Protected by MIT License.
