@@ -98,6 +98,8 @@ body{
     background: var(--rich-black);
 }
 
+/* Header */
+
 header{
     font-family: "Ubuntu";
     height: 85px;
@@ -160,28 +162,53 @@ header{
     color: var(--alice-blue);
 }
 
-/* REEVALUAR EL FONDO DE #WELCOME */
+/* Mensaje de Bienvenida */
 
 #welcome{
     overflow: hidden;
     height: calc(100vh - 85px) !important;
+    background-color: rgba(20, 24, 33, .65);
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 
 #welcome video{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.welcome-background{
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
     position: absolute;
     top: 0;
-    transform: translateX(0%) translateY(0%);
-    width: 100%;
+    left: 0;
     z-index: -1;
 }
+
+.welcome-message{
+    font-family: "Ubuntu";
+}
+
+.welcome-message span{
+    text-align: left;
+    color: var(--alice-blue);
+    font-size: 3rem;
+}
+
+.welcome-message h1{
+    text-align: center;
+    color: var(--spanish-viridian);
+    font-size: 7.75rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* Sección "Sobre mí" */
+
+
+
+/* Pie de página */
 
 footer{
     font-family: "Open Sans";
