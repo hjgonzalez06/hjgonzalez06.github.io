@@ -17,7 +17,6 @@
 :root{
     --rich-black: #141821;
     --spanish-viridian: #008060;
-    --blue-saphire: #006080;
     --alice-blue: #F1F8FB;
     --jet-gray: #303030;
     --breakpoint-sm: 576px;
@@ -100,7 +99,7 @@ body{
 
 /* Header */
 
-header{
+header#menu{
     font-family: "Ubuntu";
     height: 85px;
     border-bottom: 5px var(--spanish-viridian) solid;
@@ -205,6 +204,124 @@ header{
 }
 
 /* Sección "Sobre mí" */
+
+#about{
+    padding: 30px 0 0 0;
+    /* border-top: 5px var(--spanish-viridian) solid; */
+}
+
+.section-header{
+    display: block;
+}
+
+.section-title{
+    font-family: "Ubuntu";
+    font-size: 4rem;
+    line-height: 70px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--spanish-viridian);
+    margin-bottom: 25px;
+}
+
+.section-title::after{
+    background-color: var(--spanish-viridian);
+    position: relative;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 30px;
+    margin: 10px auto 20px;
+}
+
+.about-section-tagline{
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--alice-blue);
+    text-align: center;
+    max-width: 550px;
+    margin: auto auto 80px auto;
+}
+
+.about-filter{
+    background-color: var(--jet-gray);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+    width:90%;
+}
+
+ul.filter{
+    visibility: visible;
+    text-align: center;
+    margin-bottom: 0;
+    list-style: none outside;
+}
+
+ul.filter > li{
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+    text-align: center;
+}
+
+ul.filter > li a{
+    display: inline-block;
+    line-height: 60px;
+    font-size: 1.5rem;
+    color: var(--alice-blue);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.filter > li a:hover{
+    color: var(--spanish-viridian);
+}
+
+ul.filter >li.active a{
+    color: var(--spanish-viridian);
+}
+
+#option-section{
+    padding: 125px 0 0 0;
+    /* background-color: var(--spanish-viridian); */
+}
+
+.columna{
+    float: left;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p{
+    margin: 0 0 25px 0;
+    font-family: "Open Sans";
+    font-size: 1.5rem;
+    color: var(--alice-blue);
+    text-align: justify;
+}
+
+#profile{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#profile figure{
+    margin: 0 auto;
+}
+
+#profile img{
+    width: 384px;
+    height: 384px;
+    border-radius: 10px;
+}
 
 
 

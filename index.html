@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Título -->
-        <title>Hiram J. González - Ing. Sistemas & Web Developer</title>
+        <title>Hiram J. González - Ing. Sistemas & Desarrollador Web</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/logos/logo-v2.png" type="image/x-icon">
         <!-- Hojas de Estilo -->
@@ -13,7 +13,7 @@
     <body>
 
         <!-- Barra de Navegación -->
-        <header class="row">
+        <header id="menu" class="row">
             <figure id="logo" class="col-5">
                 <img src="assets/logos/logo-v2.svg" alt="Logo HJG"/>
                 <figcaption>Hiram J. González</figcaption>
@@ -31,9 +31,9 @@
         <!-- Cuerpo de la página -->
         <main class="row">
 
-            <!-- Sección de Bienvenida -->
+            <!-- Sección de Presentación -->
             <section id="welcome" class="col-12">
-                <!-- Video para fondo de la presentación de la páginas -->
+                <!-- Video para fondo de la presentación de la página -->
                 <video class="welcome-background" loop autoplay preload muted>
                     <source src="assets/visuals/video-inicio.mp4" type="video/mp4">
                 </video>
@@ -49,8 +49,75 @@
                 </div>
             </section>
 
+            <!-- Sección Sobre mí -->
             <section id="about" class="col-12">
-
+                <header class="section-header">
+                    <h1 class="section-title">Bienvenidos a mi portafolio personal online</h1>
+                    <h2 class="about-section-tagline">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Corporis aperiam facilis adipisci officiis, quas magni iure
+                        nobis incidunt praesentium mollitia ullam quibusdam doloribus,
+                        tenetur numquam quis natus, beatae sit quos?
+                    </h2>
+                </header>
+                <div class="about-filter col-12">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="filter">
+                                <li>
+                                    <a href="#">SOBRE MÍ</a>
+                                </li>
+                                <li>
+                                    <a href="#">HABILIDADES TÉCNICAS</a>
+                                </li>
+                                <li>
+                                    <a href="#">INFORMACIÓN ADICIONAL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="option-section">
+                    <div class="container">
+                        <div id="sobre-mi" class="row" style="display: block;">
+                            <div class="columna col-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Optio illum doloremque inventore deleniti eius laboriosam,
+                                    ex exercitationem est nobis iusto natus corporis laborum
+                                    doloribus possimus accusantium quod incidunt. Culpa, tenetur!
+                                </p>
+                                <p>Ratione possimus molestias similique sapiente, facilis
+                                    totam labore autem soluta nostrum dolor maiores est odit
+                                    laudantium repellat ad, doloremque aspernatur, eius error
+                                    architecto eaque impedit maxime! Omnis facilis quaerat minus.
+                                </p>
+                                <p>Minima doloribus impedit consectetur tenetur asperiores?
+                                    Temporibus deserunt molestias eum illo quod numquam voluptatibus
+                                    vitae saepe sed, enim pariatur eos praesentium, eaque officiis
+                                    excepturi laboriosam corrupti ut! Quam, id qui.
+                                </p>
+                                <p>Minima doloribus impedit consectetur tenetur asperiores?
+                                    Temporibus deserunt molestias eum illo quod numquam voluptatibus
+                                    vitae saepe sed, enim pariatur eos praesentium, eaque officiis
+                                    excepturi laboriosam corrupti ut! Quam, id qui.
+                                </p>
+                            </div>
+                            <div id="profile" class="columna col-6">
+                                <figure>
+                                    <img src="assets/profile/foto-perfil.png"
+                                    alt="Foto de Perfil - Hiram González"/>
+                                </figure>
+                            </div>
+                        </div>
+                        <div id="tech-skills" class="row" style="display: none;">
+                            
+                        </div>
+                        <div id="more-info" class="row" style="display: none;">
+                            <div class="columna col-6"></div>
+                            <div class="columna col-6"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main>
