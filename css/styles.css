@@ -143,7 +143,7 @@ header#menu{
 }
 
 .list-item{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: auto 15px;
 }
@@ -151,7 +151,9 @@ header#menu{
 .list-item > a{
     text-decoration: none;
     color: var(--spanish-viridian);
-    padding: 5px 10px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .list-item > a:hover{
@@ -216,9 +218,9 @@ header#menu{
 
 .section-title{
     font-family: "Ubuntu";
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 70px;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
     color: var(--spanish-viridian);
     margin-bottom: 25px;
@@ -323,7 +325,84 @@ p{
     border-radius: 10px;
 }
 
+#tech-skills #lang{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+#lang div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lang img{
+    height: 75px;
+    width: 75px;
+}
+
+#lang figcaption{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--alice-blue);
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+/* Sección "Descarga de CV" */
+
+#cv-download{
+    background-color: var(--spanish-viridian);
+    padding: 50px 0;
+}
+
+#download-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#download-info h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--alice-blue);
+}
+
+#download-info a{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--alice-blue);
+    border: 1px var(--alice-blue) solid;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    padding: 10px 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#download-info a:hover{
+    color: var(--spanish-viridian);
+    background-color: var(--alice-blue);
+}
+
+/* Sección "Servicios" */
+
+#servicios{
+    padding-top: 50px;
+}
+
+.section-tagline{
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--alice-blue);
+    text-align: center;
+    max-width: 550px;
+    margin: auto auto 80px auto;
+}
 
 /* Pie de página */
 
