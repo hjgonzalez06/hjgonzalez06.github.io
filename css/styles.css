@@ -391,7 +391,7 @@ p{
 
 /* Sección "Servicios" */
 
-#servicios{
+.post-separator{
     padding-top: 50px;
 }
 
@@ -402,6 +402,22 @@ p{
     text-align: center;
     max-width: 550px;
     margin: auto auto 80px auto;
+}
+
+
+
+/* Sección "Proceso de Trabajo */
+
+
+
+/* Sección "Proyectos" */
+
+
+
+/* Sección "Contacto" */
+
+#contacto{
+    padding-top: 50px;
 }
 
 /* Pie de página */
