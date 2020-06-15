@@ -289,9 +289,8 @@ ul.filter >li.active a{
     color: var(--spanish-viridian);
 }
 
-#option-section{
-    padding: 125px 0 0 0;
-    /* background-color: var(--spanish-viridian); */
+#sobre-mi{
+    padding-top: 100px;
 }
 
 .columna{
@@ -304,7 +303,7 @@ ul.filter >li.active a{
 p{
     margin: 0 0 25px 0;
     font-family: "Open Sans";
-    font-size: 1.5rem;
+    font-size: 1.825rem;
     color: var(--alice-blue);
     text-align: justify;
 }
@@ -320,28 +319,35 @@ p{
 }
 
 #profile img{
-    width: 384px;
-    height: 384px;
+    width: 370px;
+    height: 370px;
     border-radius: 10px;
 }
 
-#tech-skills #lang{
+.skills{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-#lang div{
+.skills div{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-#lang img{
-    height: 75px;
-    width: 75px;
+.skills figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills img{
+    height: 80px;
+    width: 80px;
 }
 
 #lang figcaption{
@@ -352,10 +358,38 @@ p{
     margin: 10px 0 25px 0;
 }
 
+#tech ul{
+    margin: -15px 0 15px 15px;
+    list-style-type: none;
+}
+
+#tech ul li{
+    font-size: 1.7rem;
+    color: var(--spanish-viridian);
+    margin: 2.5px auto;
+}
+
+#tech ul li span{
+    color: var(--alice-blue);
+}
+
+#more-info p{
+    padding: 0 150px;
+}
+
+#soft-skills figcaption{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--alice-blue);
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
 /* Sección "Descarga de CV" */
 
 #cv-download{
     background-color: var(--spanish-viridian);
+    margin-top: 50px;
     padding: 50px 0;
 }
 
