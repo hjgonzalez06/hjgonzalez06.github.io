@@ -438,7 +438,82 @@ p{
     margin: auto auto 80px auto;
 }
 
+#services-info{
+    border-top: 1px var(--alice-blue) solid;
+    border-bottom: 1px var(--alice-blue) solid;
+    text-align: center;
+}
 
+#services-info .columna{
+    overflow: hidden;
+    position: relative;
+    padding: 120px 50px;
+    min-height: 450px;
+}
+
+#services-info .columna:hover{
+    background-color: var(--jet-gray);
+}
+
+#services-info .border-left{
+    border-left: 1px var(--alice-blue) solid;
+}
+
+#services-info .border-right{
+    border-right: 1px var(--alice-blue) solid;
+}
+
+#services-info .main{
+    transition: all 300ms cubic-bezier(.07,.58,.39,1);
+}
+
+#services-info i{
+    color: var(--spanish-viridian);
+    font-size: 64px;
+    border: 1px var(--alice-blue) dashed; /*ELIMINAR AL COLOCAR LOS ÍCONOS O IMÁGENES*/
+}
+
+#services-info .main .i, #services-info .main .h2{
+    backface-visibility: hidden;
+}
+
+#services-info h2{
+    font-size: 1.6rem;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 0;
+    color: var(--alice-blue);
+}
+
+#services-info h3{
+    font-size: 1.5rem;
+    line-height: 24px;
+    color: var(--alice-blue);
+}
+
+.desc{
+    font-size: 1.5rem;
+    color: var(--alice-blue);
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    transform: perspective(500px) rotateX(-90deg) rotateY(0) rotateZ(0);
+    transition: all .27s cubic-bezier(0,0,0.580,1);
+}
+
+.columna:hover .services-main{
+    margin-top: -85px;
+}
+
+.columna:hover .desc{
+    opacity: 1;
+    transform: perspective(500px) rotateX(0) rotateY(0) rotateZ(0);
+}
 
 /* Sección "Proceso de Trabajo */
 
