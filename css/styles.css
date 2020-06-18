@@ -207,9 +207,8 @@ header#menu{
 
 /* Sección "Sobre mí" */
 
-#about{
-    padding: 30px 0 0 0;
-    /* border-top: 5px var(--spanish-viridian) solid; */
+.section-padding{
+    padding: 50px 0 0 0;
 }
 
 .section-header{
@@ -425,10 +424,6 @@ p{
 
 /* Sección "Servicios" */
 
-.post-separator{
-    padding-top: 50px;
-}
-
 .section-tagline{
     font-size: 2rem;
     font-weight: 300;
@@ -478,7 +473,7 @@ p{
 }
 
 #services-info h2{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 500;
@@ -517,7 +512,35 @@ p{
 
 /* Sección "Proceso de Trabajo */
 
+#proceso .row{
+    text-align: center;
+}
 
+#proceso .columna:hover{
+    background-color: var(--jet-gray);
+    border-radius: 5px;
+    border: 1px var(--alice-blue) solid;
+}
+
+.process-title i{
+    color: var(--spanish-viridian);
+    font-size: 64px;
+    border: 1px var(--alice-blue) dashed; /*ELIMINAR AL COLOCAR LOS ÍCONOS O IMÁGENES*/
+}
+
+.process-title h2{
+    margin-top: 10px;
+    color: var(--alice-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.process-main{
+    margin-top: 25px;
+    font-size: 1.75rem;
+    text-align: center;
+}
 
 /* Sección "Proyectos" */
 
