@@ -513,23 +513,24 @@ p{
 /* Sección "Proceso de Trabajo */
 
 #proceso .row{
+    background-color: var(--jet-gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
     text-align: center;
 }
 
-#proceso .columna:hover{
-    background-color: var(--jet-gray);
-    border-radius: 5px;
-    border: 1px var(--alice-blue) solid;
+.margin-top{
+    margin-top: 35px;
 }
 
 .process-title i{
     color: var(--spanish-viridian);
-    font-size: 64px;
+    font-size: 150px;
     border: 1px var(--alice-blue) dashed; /*ELIMINAR AL COLOCAR LOS ÍCONOS O IMÁGENES*/
 }
 
-.process-title h2{
-    margin-top: 10px;
+#proceso .columna h2{
+    margin-top: 35px;
     color: var(--alice-blue);
     font-size: 2rem;
     text-transform: uppercase;
@@ -537,7 +538,7 @@ p{
 }
 
 .process-main{
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 1.75rem;
     text-align: center;
 }
@@ -612,7 +613,35 @@ footer{
 
 /* Código Responsive Extra Small */
 
-@media screen and (max-width: var(--breakpoint-sm)){}
+@media screen and (max-width: 576px){
+
+    /* Seción Proceso de Trabajo */
+
+    #proceso .flex-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #proceso .flex-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #proceso .columna{
+        width: 100%;
+    }
+
+    #proceso .columna h2{
+        margin-top: auto;
+    }
+
+    .process-main{
+        margin-bottom: -2.5px;
+    }
+
+}
 
 /* Código Responsive Small */
 
