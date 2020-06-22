@@ -545,7 +545,57 @@ p{
 
 /* Sección "Proyectos" */
 
+#portfolio .columna{
+    padding: 0;
+}
 
+.image-holder img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.proyecto-hover{ /* FALTA TERMINAR DE IMPLEMENTAR EFECTO, CÓDIGO EXPERIMENTAL */
+    text-decoration: none;
+    background-color: rgba(0,128,96,0.7);
+    opacity: 0;
+    text-align: justify;
+    cursor: pointer;
+    z-index: 5;
+    transition: .3s all linear;
+    position: absolute;
+    width: inherit;
+    height: 450px;
+    top: inherit;
+    right: inherit;
+    bottom: inherit;
+    left: inherit;
+}
+
+.proyecto-hover:hover{
+    opacity: 1;
+}
+
+.proyecto-info{
+    padding: 15px;
+}
+
+.proyecto-title{
+    margin: 10px 0 10px 10px;
+    font-size: 1.825rem;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--alice-blue);
+    text-align: justify;
+}
+
+.proyecto-category{
+    color: var(--alice-blue);
+    font-size: 1.5rem;
+    text-align: justify;
+}
 
 /* Sección "Contacto" */
 
