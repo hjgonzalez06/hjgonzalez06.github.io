@@ -79,13 +79,13 @@
                         <div class="row">
                             <ul class="filter">
                                 <li>
-                                    <a href="#">SOBRE MÍ</a>
+                                    <a href="#sobre-mi">SOBRE MÍ</a>
                                 </li>
                                 <li>
-                                    <a href="#">HABILIDADES TÉCNICAS</a>
+                                    <a href="#tech-skills">HABILIDADES TÉCNICAS</a>
                                 </li>
                                 <li>
-                                    <a href="#">INFORMACIÓN ADICIONAL</a>
+                                    <a href="#more-info">INFORMACIÓN ADICIONAL</a>
                                 </li>
                             </ul>
                         </div>
@@ -93,7 +93,7 @@
                 </div>
                 <div id="option-section">
                     <div class="container">
-                        <div id="sobre-mi" class="row about-info" style="display: block;">
+                        <div id="sobre-mi" class="row">
                             <div class="columna col-6">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Optio illum doloremque inventore deleniti eius laboriosam,
@@ -118,9 +118,9 @@
                                 </figure>
                             </div>
                         </div>
-                        <div id="tech-skills" class="row about-info" style="display: block;">
+                        <div id="tech-skills" class="row">
                             <div id="lang" class="columna col-6 skills">
-                                <div class="row">
+                                <div>
                                     <figure>
                                         <img src="assets/visuals/html5.png" alt="HTML5">
                                         <figcaption>HTML5</figcaption>
@@ -134,7 +134,7 @@
                                         <figcaption>Javascript</figcaption>
                                     </figure>
                                 </div>
-                                <div class="row">
+                                <div>
                                     <figure>
                                         <img src="assets/visuals/jquery.png" alt="jQuery">
                                         <figcaption>jQuery</figcaption>
@@ -148,7 +148,7 @@
                                         <figcaption>VueJS</figcaption>
                                     </figure>
                                 </div>
-                                <div class="row">
+                                <div>
                                     <figure>
                                         <img src="assets/visuals/php.png" alt="PHP">
                                         <figcaption>PHP</figcaption>
@@ -223,7 +223,7 @@
                                 </ul>
                             </div>                           
                         </div>
-                        <div id="more-info" class="row about-info" style="display: block;">
+                        <div id="more-info" class="row">
                             <div id="col-more-info" class="col-12">
                                 <p>
                                     Me considero una persona responsable, proactiva y empática;
@@ -235,7 +235,7 @@
                                     que hago.
                                 </p>
                                 <div id="soft-skills" class="skills">
-                                    <div class="row">
+                                    <div>
                                         <figure>
                                             <figcaption>Honestidad</figcaption>
                                             <img src="" alt="">
@@ -253,7 +253,7 @@
                                             <img src="" alt="">
                                         </figure>
                                     </div>
-                                    <div class="row">
+                                    <div>
                                         <figure>
                                             <figcaption>Adaptación</figcaption>
                                             <img src="" alt="">
@@ -730,13 +730,14 @@
         </footer>
         
         <!-- Scripts -->
-        <script src="js/app.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/fontawesome.js"></script>
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/fontawesome.js"></script>
         <script>
-            AOS.init();
+            $(function() {
+                 AOS.init();
+            });
         </script>
-        
     </body>
 </html>
