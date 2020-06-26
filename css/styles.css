@@ -759,7 +759,7 @@ textarea{
     color: var(--jet-gray);
 }
 
-#form input[type="submit"]{
+#form #enviar{
     display: inline-block;
     width: 100%;
     padding: 19px 48px;
@@ -769,7 +769,7 @@ textarea{
     border: 3px var(--spanish-viridian) solid;
 }
 
-#form input[type="submit"]:hover{
+#form #enviar:hover{
     color: var(--alice-blue);
     background-color: var(--spanish-viridian);
     border: 3px var(--alice-blue) solid;
