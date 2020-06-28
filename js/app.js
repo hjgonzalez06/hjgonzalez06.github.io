@@ -62,6 +62,15 @@ $(document).ready(function(){
         let action = $('form').attr('action');
         let method = $('form').attr('method');
 
+        if(name == "" || email == "" || subject == "" || message == ""){
+            return Swal.fire({
+                                icon: 'warning',
+                                title: '¡Debe rellenar todos los campos!',
+                                showConfirmButton: false,
+                                timer: 2500
+                            });
+        }
+
         let data = {
             url: action,
             type: method,
@@ -84,9 +93,19 @@ $(document).ready(function(){
             /* $('form input[type=text] , form textarea').each(function(){
                 this.value = '';
         }); */
-            alert('¡Mensaje enviado exitosamente!');
+            Swal.fire({
+                icon: 'success',
+                title: '¡Mensaje enviado!',
+                showConfirmButton: false,
+                timer: 2500
+            });
         }, function reject(reason){
-            alert('No se pudo enviar el mensaje.');
+            Swal.fire({
+                icon: 'error',
+                title: '¡Algo ha ido mal!',
+                showConfirmButton: false,
+                timer: 2500
+            });
         });
 
     });

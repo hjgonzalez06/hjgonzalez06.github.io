@@ -166,6 +166,7 @@ header#menu{
     background-color: var(--spanish-viridian);
     border-radius: 5px;
     color: var(--alice-blue);
+    transition: all 1s;
 }
 
 /* Mensaje de Bienvenida */
@@ -284,10 +285,12 @@ ul.filter > li a{
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    outline: none;
 }
 
 ul.filter > li a:hover{
     color: var(--spanish-viridian);
+    cursor: pointer;
 }
 
 ul.filter > li.active::after{
@@ -301,10 +304,12 @@ ul.filter > li.active::after{
     border-left: 10px transparent solid;
     border-right: 10px transparent solid;
     border-bottom: 10px var(--rich-black) solid;
+    outline: none;
 }
 
 ul.filter >li.active a{
     color: var(--spanish-viridian);
+    outline: none;
 }
 
 #sobre-mi{
@@ -779,6 +784,7 @@ textarea{
     color: var(--alice-blue);
     background-color: var(--spanish-viridian);
     border: 3px var(--alice-blue) solid;
+    cursor: pointer;
 }
 
 /* Pie de página */

@@ -44,7 +44,7 @@
         <header id="menu" class="row">
             <figure id="logo" class="col-5">
                 <img src="assets/logos/logo-v2.svg" alt="Logo HJG"/>
-                <figcaption id="page-name">Hiram J. González</figcaption>
+                <figcaption>Hiram J. González</figcaption>
             </figure>
             <nav id="navbar" class="col-7">
                 <ul id="navbar-list">
@@ -663,7 +663,7 @@
                                 o simplemente te apetece pasar a saludar, puedes escribirme.
                             </p>
                             <p>Envía un mensaje a hiramjgonzalez@gmail.com o completa el
-                                formulario de la derecha.
+                                formulario de contacto adjunto en esta sección.
                             </p>
                             <hr>
                             <h4>Mantente en contacto</h4>
@@ -708,17 +708,16 @@
                                 <form action="https://formspree.io/mjvaooza" method="post" autocomplete="off">
 
                                     <div class="columna col-6">
-                                        <input type="text" id="name" placeholder="Nombre y apellido" name="nom_ape">
+                                        <input type="text" id="name" placeholder="Nombre y apellido" name="nom_ape" required>
                                     </div>
                                     <div class="columna col-6">
-                                        <input type="text" id="email" placeholder="Correo electrónico" name="email">
+                                        <input type="text" id="email" placeholder="Correo electrónico" name="email" required>
                                     </div>
                                     <div class="columna col-12">
-                                        <input type="text" id="subject" placeholder="Asunto" name="subject">
+                                        <input type="text" id="subject" placeholder="Asunto" name="subject" required>
                                     </div>
                                     <div class="columna col-12">
-                                        <textarea id="mensaje" placeholder="Mensaje" name="mensaje" cols="30" rows="10"></textarea>
-                                        <!-- <input type="submit" value="Enviar mensaje"> -->
+                                        <textarea id="mensaje" placeholder="Mensaje" name="mensaje" cols="30" rows="10" required></textarea>
                                         <button type="button" id="enviar">Enviar mensaje</button>
                                     </div>
                                 </form>
@@ -747,6 +746,7 @@
         
         <!-- Scripts -->
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/sweetalert2.all.min.js"></script>
         <script src="js/aos.js"></script>
         <script src="js/app.js"></script>
         <script src="js/fontawesome.js"></script>
