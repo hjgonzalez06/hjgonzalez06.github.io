@@ -1,5 +1,30 @@
 $(document).ready(function(){
 
+    /* Efecto de Ocultamiento del Navbar */
+    const origin = $(window).scrollTop();
+    let scrollOrigin = $(window).scrollTop();
+
+    $(window).scroll(function(){
+
+        let scrollActual = $(window).scrollTop();
+
+        if(scrollActual > 85){
+            if(scrollOrigin < scrollActual){
+                $('#menu').slideUp();
+            }else{
+                $('#menu').slideDown();
+                $('#menu').css('box-shadow','5px 5px 10px 0px rgba(0,0,0,0.5)');
+            }
+        }
+
+        scrollOrigin = scrollActual;
+
+        if(scrollActual == origin){
+            $('#menu').css('box-shadow','none');
+        }
+
+    });
+
     /* Filtros de la sección "Sobre Mí" */
     $('.filter').each(function(){
 
@@ -58,7 +83,7 @@ $(document).ready(function(){
         sendData(data).then(function resolve(data){
             /* $('form input[type=text] , form textarea').each(function(){
                 this.value = '';
-            }); */
+        }); */
             alert('¡Mensaje enviado exitosamente!');
         }, function reject(reason){
             alert('No se pudo enviar el mensaje.');
