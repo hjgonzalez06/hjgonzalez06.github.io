@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
     /* Efecto de Ocultamiento del Navbar */
-    const origin = $(window).scrollTop();
     let scrollOrigin = $(window).scrollTop();
 
     $(window).scroll(function(){
@@ -19,7 +18,7 @@ $(document).ready(function(){
 
         scrollOrigin = scrollActual;
 
-        if(scrollActual == origin){
+        if(scrollActual == 0){
             $('#menu').css('box-shadow','none');
         }
 
@@ -71,6 +70,15 @@ $(document).ready(function(){
                             });
         }
 
+        if(action != "https://formspree.io/mjvaooza" || method != "post"){
+            return Swal.fire({
+                                icon: 'warning',
+                                title: '¡No modifique los atributos de este formulario!',
+                                showConfirmButton: false,
+                                timer: 2500
+                            });
+        }
+
         let data = {
             url: action,
             type: method,
@@ -90,9 +98,6 @@ $(document).ready(function(){
         };
 
         sendData(data).then(function resolve(data){
-            /* $('form input[type=text] , form textarea').each(function(){
-                this.value = '';
-        }); */
             Swal.fire({
                 icon: 'success',
                 title: '¡Mensaje enviado!',
