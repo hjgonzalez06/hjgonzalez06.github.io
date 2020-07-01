@@ -98,6 +98,7 @@ $(document).ready(function(){
         };
 
         sendData(data).then(function resolve(data){
+            $('form').trigger('reset');
             Swal.fire({
                 icon: 'success',
                 title: '¡Mensaje enviado!',

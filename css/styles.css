@@ -486,10 +486,8 @@ p{
     transition: all 300ms cubic-bezier(.07,.58,.39,1);
 }
 
-#services-info i{
-    color: var(--spanish-viridian);
-    font-size: 64px;
-    border: 1px var(--alice-blue) dashed; /*ELIMINAR AL COLOCAR LOS ÍCONOS O IMÁGENES*/
+#services-info img{
+    height: 64px;
 }
 
 #services-info .main .i, #services-info .main .h2{
