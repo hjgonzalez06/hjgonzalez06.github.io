@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    /* Removiendo efectos de AOS en dispositivos móviles */
+    if($(window).width() < 576){
+        $('*').removeAttr('data-aos');
+    }
+
     /* Efecto de Ocultamiento del Navbar */
     let scrollOrigin = $(window).scrollTop();
 
@@ -23,6 +28,30 @@ $(document).ready(function(){
         }
 
     });
+
+    /* Desplegando enlaces del menú con el toggler */
+    $('.navbar-toggler').on('click',function(e){
+
+        if($(this).hasClass('activated')){
+            $(this).find('i').removeClass('fa-times');
+            $(this).find('i').addClass('fa-bars');
+            $(this).removeClass('activated');
+            $('#navbar-list').slideUp(400,function(){
+                $('#menu').css('border-bottom','5px var(--spanish-viridian) solid');
+            });
+            return '';
+        }
+
+        $(this).find('i').removeClass('fa-bars');
+        $(this).find('i').addClass('fa-times');
+        $(this).addClass('activated');
+        $('#menu').css('border-bottom','none');
+        $('#menu').css('box-shadow','none');
+        $('#navbar-list').slideDown();
+        $('#navbar-list').css('border-bottom','5px var(--spanish-viridian) solid');
+
+        e.preventDefault();
+    })
 
     /* Filtros de la sección "Sobre Mí" */
     $('.filter').each(function(){

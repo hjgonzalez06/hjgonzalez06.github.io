@@ -140,14 +140,15 @@ header#menu{
 }
 
 .navbar-toggler{
-    padding: 15px;
+    padding: 7.5px;
     font-size: 2rem;
     line-height: 1;
     background-color: transparent;
     border: 1px var(--spanish-viridian) solid;
     border-radius: 5px;
-    position: fixed;
-    right: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     display: none;
 }
 
@@ -884,22 +885,90 @@ footer{
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        position: absolute;
+        top: 85px;
     }
 
     .list-item{
-        margin: 15px auto;
+        margin: 25px auto;
+        text-align: center;
+        outline: none;
     }
 
     .list-item > a{
         padding: 0;
+        outline: none;
     }
 
     .navbar-toggler{
         display: block;
-        position: fixed;
-        right: 100px;
-        top: 16px;
-        padding: 7.5px
+        outline: none;
+    }
+
+    /* Mensaje de Bienvenida */
+
+    .welcome-message span{
+        font-size: 2rem;
+    }
+
+    .welcome-message h1{
+        margin-top: 20px;
+        font-size: 3.75rem;
+    }
+
+    /* Sección Sobre mí */
+
+    #about .section-title{
+        padding: 0 10px;
+    }
+    
+    .about-section-tagline{
+        padding: 0 25px;
+    }
+
+    #profile img{
+        width: 290px;
+        height: 290px;
+    }
+
+    .skills figure{
+        margin: 15px 25px 0;
+    }
+
+    #lang img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #lang figcaption{
+        font-size: 1.5rem;
+        font-weight: 1000;
+    }
+
+    #more-info p{
+        padding: 0;
+    }
+
+    #more-info .soft-skills-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Sección Descarga de CV */
+
+    #download-info{
+        flex-direction: column;
+    }
+
+    #download-info h2{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    #download-info a{
+        margin-top: 25px;
     }
 
     /* Sección Proceso de Trabajo */
@@ -926,6 +995,20 @@ footer{
 
     .process-main{
         margin-bottom: -2.5px;
+    }
+
+    /* Sección Contacto */
+
+    #contact-text hr{
+        width: 100%;
+    }
+
+    #contact-text h4{
+        text-align: center;
+    }
+
+    #social-contact ul{
+        text-align: center;
     }
 
 }
