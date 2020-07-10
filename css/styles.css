@@ -971,6 +971,12 @@ footer{
         margin-top: 25px;
     }
 
+    /* Sección Servicios */
+
+    #services-info .columna{
+        border: 1px var(--alice-blue) solid;
+    }
+
     /* Sección Proceso de Trabajo */
 
     #proceso .flex-column{

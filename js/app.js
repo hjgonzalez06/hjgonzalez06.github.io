@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
-    /* Removiendo efectos de AOS en dispositivos móviles */
+    /* Removiendo efectos de AOS en dispositivos móviles
     if($(window).width() < 576){
         $('*').removeAttr('data-aos');
-    }
+    }; */
 
     /* Efecto de Ocultamiento del Navbar */
     let scrollOrigin = $(window).scrollTop();
@@ -30,28 +30,50 @@ $(document).ready(function(){
     });
 
     /* Desplegando enlaces del menú con el toggler */
-    $('.navbar-toggler').on('click',function(e){
+    if($(window).width() < 576){
 
-        if($(this).hasClass('activated')){
-            $(this).find('i').removeClass('fa-times');
-            $(this).find('i').addClass('fa-bars');
-            $(this).removeClass('activated');
-            $('#navbar-list').slideUp(400,function(){
-                $('#menu').css('border-bottom','5px var(--spanish-viridian) solid');
-            });
-            return '';
-        }
+        $('.navbar-toggler').on('click',function(e){
 
-        $(this).find('i').removeClass('fa-bars');
-        $(this).find('i').addClass('fa-times');
-        $(this).addClass('activated');
-        $('#menu').css('border-bottom','none');
-        $('#menu').css('box-shadow','none');
-        $('#navbar-list').slideDown();
-        $('#navbar-list').css('border-bottom','5px var(--spanish-viridian) solid');
+            if($(this).hasClass('activated')){
+                $(this).find('svg').removeClass('fa-times');
+                $(this).find('svg').addClass('fa-bars');
+                $(this).removeClass('activated');
+                $('#navbar-list').slideUp(400,function(){
+                    $('#menu').css('border-bottom','5px var(--spanish-viridian) solid');
+                });
+                return '';
+            };
+    
+            $(this).find('svg').removeClass('fa-bars');
+            $(this).find('svg').addClass('fa-times');
+            $(this).addClass('activated');
+            $('#menu').css('border-bottom','none');
+            $('#menu').css('box-shadow','none');
+            $('#navbar-list').slideDown();
+            $('#navbar-list').css('border-bottom','5px var(--spanish-viridian) solid');
+    
+            e.preventDefault();
 
-        e.preventDefault();
-    })
+        });
+
+        $('.list-item').on('click',function(e){
+
+            if($('.navbar-toggler').hasClass('activated')){
+                $('.navbar-toggler').find('svg').removeClass('fa-times');
+                $('.navbar-toggler').find('svg').addClass('fa-bars');
+                $('.navbar-toggler').removeClass('activated');
+                $('#navbar-list').slideUp(400,function(){
+                    $('#menu').css('border-bottom','5px var(--spanish-viridian) solid');
+                });
+                return '';
+            };
+
+            e.preventDefault();
+
+        });
+
+    };
+    
 
     /* Filtros de la sección "Sobre Mí" */
     $('.filter').each(function(){
@@ -145,4 +167,4 @@ $(document).ready(function(){
 
     });
 
-})
+});
