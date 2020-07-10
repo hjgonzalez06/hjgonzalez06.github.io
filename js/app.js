@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-    /* Removiendo efectos de AOS en dispositivos móviles
-    if($(window).width() < 576){
-        $('*').removeAttr('data-aos');
-    }; */
-
     /* Efecto de Ocultamiento del Navbar */
     let scrollOrigin = $(window).scrollTop();
 
