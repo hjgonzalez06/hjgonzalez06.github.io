@@ -237,7 +237,7 @@ header#menu{
 /* Sección "Sobre mí" */
 
 .section-padding{
-    padding: 50px 0 0 0;
+    padding: 90px 0 0 0;
 }
 
 .section-header{
@@ -922,8 +922,20 @@ footer{
         padding: 0 10px;
     }
     
-    .about-section-tagline{
+    .about-section-tagline, .section-tagline{
         padding: 0 25px;
+    }
+
+    ul.filter > li.active::after{
+        top: 50%;
+        left: 0;
+        margin: -9px 0 0 -30px;
+        width: 0;
+        height: 0;
+        border-top: 10px transparent solid;
+        border-bottom: 10px transparent solid;
+        border-left: 10px var(--rich-black) solid;
+        outline: none;
     }
 
     #profile img{
@@ -972,9 +984,29 @@ footer{
     }
 
     /* Sección Servicios */
-
+    
     #services-info .columna{
         border: 1px var(--alice-blue) solid;
+    }
+
+    .services-main{
+        margin-top: -85px;
+    }
+
+    #services-info h2{
+        margin: 10px 0;
+    }
+
+    .desc{
+        padding: 0 20px;
+        opacity: 1;
+        transform: none;
+        transition: none;
+        text-align: justify;
+    }
+
+    #services-info .columna:first-of-type .desc{
+        margin-top: 10px;
     }
 
     /* Sección Proceso de Trabajo */
