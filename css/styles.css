@@ -623,7 +623,9 @@ p{
 }
 
 .proyecto-info{
-    padding: 50px 25px 0 25px;
+    position: fixed;
+    bottom: 30%;
+    padding: 0 35px;
     transform: translateY(35%);
 }
 
@@ -1047,6 +1049,72 @@ footer{
 
     #social-contact ul{
         text-align: center;
+    }
+
+    @media screen and (max-width: 359px){
+
+        ul{
+            padding-left: 1.26rem;
+        }
+
+        /* Menú de Navegación */
+
+        #logo img{
+            margin-left: -10px;
+        }
+
+        #logo figcaption{
+            margin-left: 2.5px;
+        }
+
+        .navbar-toggler{
+            padding: 6px;
+            top: 23px;
+            right: 5px;
+        }
+
+        /* Mensaje de Bienvenida */
+
+        .welcome-message h1{
+            font-size: 3.35rem;
+        }
+
+        /* Sección Sobre Mí */
+
+        ul.filter > li{
+            margin: 0 15px;
+        }
+
+        #profile img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .skills figure{
+            margin: 15px 20px 0;
+        }
+
+        /* Sección Servicios */
+
+        #services-info .columna{
+            padding: 120px 10px;
+        }
+
+        #services-info .columna:first-of-type .desc{
+            top: 44%;
+        }
+
+        .desc{
+            padding: 0 10px;
+            top: 46%;
+        }
+
+        /* Sección Proceso de Trabajo */
+
+        .process-main{
+            text-align: justify;
+        }
+
     }
 
 }
