@@ -156,6 +156,11 @@ header#menu{
     text-decoration: none;
 }
 
+.navbar-toggler.activated{
+    top: 23px;
+    width: 34.5px;
+}
+
 .navbar-toggler-icon{
     color: var(--spanish-viridian);
 }
@@ -898,7 +903,6 @@ footer{
     }
 
     .list-item > a{
-        padding: 0;
         outline: none;
     }
 
@@ -1051,7 +1055,7 @@ footer{
         text-align: center;
     }
 
-    @media screen and (max-width: 359px){
+    @media screen and (max-width: 355px){
 
         ul{
             padding-left: 1.26rem;
@@ -1059,18 +1063,10 @@ footer{
 
         /* Menú de Navegación */
 
-        #logo img{
-            margin-left: -10px;
-        }
-
         #logo figcaption{
+            margin-top: -2.5px;
             margin-left: 2.5px;
-        }
-
-        .navbar-toggler{
-            padding: 6px;
-            top: 23px;
-            right: 5px;
+            font-size: 2.25rem;
         }
 
         /* Mensaje de Bienvenida */
