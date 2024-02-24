@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home | Hiram González">
+	<main>
+		<h1>Work in <span class="text-gradient">progress</span></h1>
+		<div class="spinner"/>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		max-width: calc(100% - 2rem);
+		height: calc(100vh - 4.3rem); /* TODO: Fix this */
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4rem;
+		border: 10px solid rgb(55, 125, 255);
+
+		@media (max-width: 1024px) {
+			gap: 2rem;
+		}
+	}
+
+	h1 {
+		font-size: 6rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin: 0;
+
+		@media (max-width: 1024px) {
+			font-size: 4rem;
+		}
+	}
+
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+
+	.spinner {
+		border: 10px solid #f3f3f3;
+		border-top: 10px solid rgb(131, 255, 179);
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		animation: spin 2s linear infinite;
+		
+		@media (max-width: 1024px) {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	@keyframes spin {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+</style>

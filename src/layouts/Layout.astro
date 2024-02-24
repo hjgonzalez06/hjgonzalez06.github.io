@@ -1,0 +1,47 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Hiram Gonzalez's personal website." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--white: 255, 255, 255;
+		--black: 19, 21, 26;
+		--primary-accent: 55, 125, 255;
+		--primary-accent-light: 131, 179, 255;
+		--primary-accent-dark: 0, 46, 133;
+		--secondary-accent: 55, 255, 125;
+		--secondary-accent-light: 131, 255, 179;
+		--secondary-accent-dark: 0, 133, 46;
+		--accent-gradient: linear-gradient(
+			90deg,
+			rgb(var(--primary-accent)),
+			rgb(var(--secondary-accent)) 30%,
+			white 60%
+		);
+	}
+
+	html {
+		font-family: system-ui, sans-serif;
+		background: #223243;
+		background-size: 224px;
+	}
+</style>
