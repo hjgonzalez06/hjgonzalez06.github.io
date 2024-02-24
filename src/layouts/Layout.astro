@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Hiram Gonzalez's personal website." />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -20,32 +20,28 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		--white: 255, 255, 255;
+		--black: 19, 21, 26;
+		--primary-accent: 55, 125, 255;
+		--primary-accent-light: 131, 179, 255;
+		--primary-accent-dark: 0, 46, 133;
+		--secondary-accent: 55, 255, 125;
+		--secondary-accent-light: 131, 255, 179;
+		--secondary-accent-dark: 0, 133, 46;
 		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
+			90deg,
+			rgb(var(--primary-accent)),
+			rgb(var(--secondary-accent)) 30%,
 			white 60%
 		);
 	}
+
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background: #223243;
 		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
 	}
 </style>
