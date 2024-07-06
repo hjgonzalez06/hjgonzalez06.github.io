@@ -1,4 +1,5 @@
 ---
+import Navbar from "~/components/Navbar.astro";
 import "~/styles/tailwind.css";
 
 interface Props {
@@ -19,8 +20,9 @@ const { title } = Astro.props;
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<title>{title}</title>
 	</head>
-	<body class="relative">
-		<main class="w-full h-full p-4">
+	<body class="flex min-h-screen flex-col font-inter text-white bg-black relative">
+		<Navbar />
+		<main class="flex-1">
 			<slot />
 		</main>
 	</body>
@@ -33,19 +35,5 @@ const { title } = Astro.props;
 		--royal-blue: #4366e1;
 		--mint: #21ba91;
 		--cool-gray: #a9a9bc;
-	}
-
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-		min-height: 100%;
-		height: 100%;
-	}
-
-	body {
-		font-family: "Inter", sans-serif;
-		color: var(--white);
-		background-color: var(--black);
 	}
 </style>
