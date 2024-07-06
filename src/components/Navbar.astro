@@ -1,0 +1,28 @@
+---
+import Section from "./Section.astro";
+---
+
+<nav
+  class="fixed top-0 left-0 w-full z-10"
+>
+  <Section class='flex justify-between items-center'>
+    <a href="/" class="text-xl font-bold">Hiram Gonzalez</a>
+    <ul class="flex space-x-4">
+      <li>
+        <a href="/about" class="hover:underline">About</a>
+      </li>
+      <li>
+        <a href="/resume" class="hover:underline">Resume</a>
+      </li>
+      <li>
+        <a href="/portfolio" class="hover:underline">Portfolio</a>
+      </li>
+      <li>
+        <a href="/blog" class="hover:underline">Blog</a>
+      </li>
+      <li>
+        <a href="/contact" class="hover:underline">Contact</a>
+      </li>
+    </ul>
+  </Section>
+</nav>
