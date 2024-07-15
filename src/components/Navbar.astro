@@ -1,27 +1,31 @@
 ---
 import Section from "./Section.astro";
+import Link from "./Link.astro";
+
+import Logo from "~/assets/logos/logo.svg";
 ---
 
-<nav
-  class="fixed top-0 left-0 w-full z-10"
->
-  <Section class='flex justify-between items-center'>
-    <a href="/" class="text-xl font-bold">Hiram Gonzalez</a>
+<nav class="fixed top-0 left-0 w-full z-10 bg-black">
+  <Section class="flex justify-between items-center !py-2">
+    <a href="/" class="flex justify-center items-center gap-2">
+      <img src={Logo.src} alt="Logo" class="w-12 h-12" />
+      <span class="text-2xl font-semibold font-rubik whitespace-nowrap">Hiram Gonzalez</span>
+    </a>
     <ul class="flex space-x-4">
       <li>
-        <a href="/about" class="hover:underline">About</a>
+        <Link href="/" title="About" />
       </li>
       <li>
-        <a href="/resume" class="hover:underline">Resume</a>
+        <Link href="/resume" title="Resume" />
       </li>
       <li>
-        <a href="/portfolio" class="hover:underline">Portfolio</a>
+        <Link href="/portfolio" title="Portfolio" />
       </li>
       <li>
-        <a href="/blog" class="hover:underline">Blog</a>
+        <Link href="/blog" title="Blog" />
       </li>
       <li>
-        <a href="/contact" class="hover:underline">Contact</a>
+        <Link href="/contact" title="Contact" />
       </li>
     </ul>
   </Section>
