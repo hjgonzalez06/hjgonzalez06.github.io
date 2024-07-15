@@ -1,23 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "~/layouts/Layout.astro";
+import Hero from "~/components/Hero.astro";
 ---
 
 <Layout title="Home | Hiram González">
-	<div
-		class="bg-blue-mint-gradient h-full border-8 border-white rounded-lg text-white flex flex-col justify-center items-center gap-4 lg:gap-12 p-2 m-auto"
-	>
-		<h1 class="font-rubik font-bold text-center m-0 text-7xl lg:text-8xl">
-			Hi, I'm Hiram
-		</h1>
-		<h2 class="font-medium text-center text-5xl lg:text-6xl">
-			Full-stack developer & QA analyst
-		</h2>
-		<p class="text-center m-0 text-2xl lg:text-3xl">
-			And this is a work in <span class="font-bold">progress</span>
-		</p>
-		<div
-			class="shrink-0 w-20 h-20 border-8 border-white rounded-full border-t-mint animate-spin"
-		>
-		</div>
-	</div>
+	<Hero />
 </Layout>

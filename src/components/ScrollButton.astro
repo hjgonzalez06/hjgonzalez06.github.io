@@ -1,0 +1,15 @@
+---
+interface Props {
+  text: string;
+  href: string;
+  iconSrc?: string;
+  class?: string;
+}
+
+const { text, href, iconSrc, class: className } = Astro.props;
+---
+
+<a href={href} class:list={["flex flex-col justify-center items-center gap-1 no-underline hover:no-underline active:no-underline", className]}>
+  <img src={iconSrc} alt="" class="brightness-75"/>
+  <span class="text-[10px] font-extralight uppercase">{text}</span>
+</a>
